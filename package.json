@@ -1,0 +1,35 @@
+{
+  "name": "@stak-digital/multi-select-dropdown",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "module": "src/index.js",
+  "scripts": {
+    "test": "NODE_ENV=test mocha ./src/index.test.js --require babel-register",
+    "bundle": "rollup --config rollup.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://3stacks@github.com/stak-digital/multi-select-dropdown.git"
+  },
+  "author": "Stak Digital",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stak-digital/multi-select-dropdown/issues"
+  },
+  "homepage": "https://github.com/stak-digital/multi-select-dropdown#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.0.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "expect": "1",
+    "jest": "^23.1.0",
+    "mocha": "^3.5.0",
+    "regenerator-runtime": "^0.11.1",
+    "rollup": "^0.49.3",
+    "rollup-plugin-babel": "^3.0.2"
+  },
+  "dependencies": {}
+}

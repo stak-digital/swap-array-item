@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+select[multiple] {
+  position: relative;
+  min-width: 200px;
+  max-height: 40px;
+
+  .placeholder,
+  .selected {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.2s ease-out;
+    border: {
+      left: 7px solid transparent;
+      right: 7px solid transparent;
+      bottom: none;
+      top: 7px solid #ee0000;
+    }
+  }
+
+  &.is-open {
+    &:after {
+      transform: translateY(-50%) rotate(180deg);
+    }
+  }
+}
